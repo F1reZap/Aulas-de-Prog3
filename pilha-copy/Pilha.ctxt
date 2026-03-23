@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Pilha
+comment0.text=\r\n\ Uma\ pilha\ cujo\ acesso\ aos\ elementos\ \u00E9\ LIFO.\r\n\ \r\n\ @author\ (seu\ nome)\ \r\n\ @version\ (um\ n\u00FAmero\ da\ vers\u00E3o\ ou\ uma\ data)\r\n
+comment1.params=capacidade
+comment1.target=Pilha(int)
+comment1.text=\r\n\ Construtor\ para\ objetos\ da\ classe\ Pilha\r\n
+comment2.params=item
+comment2.target=void\ push(int)
+comment3.params=
+comment3.target=int\ pop()
+comment4.params=
+comment4.target=boolean\ isVazia()
+comment5.params=
+comment5.target=boolean\ isCheia()
+comment6.params=
+comment6.target=int\ peek()
+numComments=7
