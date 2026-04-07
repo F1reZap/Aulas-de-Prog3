@@ -83,4 +83,14 @@ public class deque{
         }
     }
     
+    //teste de printar o deque 
+    public void printDeque() {  
+        System.out.print("Deque: ");
+        for (int i = 0; i < size; i++) {
+            int index = (front + i) % array.length;
+            System.out.print(array[index] + " ");
+        }
+        System.out.println();
+    }
+    
 }
