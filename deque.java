@@ -5,6 +5,12 @@ public class deque{
     private int front;
     private int rear;
     private int size;
+    private int capacity;
+    private int value;
+    private int i;
+    private int j;
+    private int k;
+    private int l;
     public deque(int capacity) {
         array = new int[capacity];
         front = 0;
@@ -61,5 +67,20 @@ public class deque{
     public boolean isEmpty() {
         return size == 0;
     }
-
+    public static void main(String[] args) {
+        deque deque = new deque(5);
+        Random rand = new Random();
+        for (int i = 0; i < 5; i++) {
+            int value = rand.nextInt(100);
+            deque.addUltimo(value);
+            System.out.println("Added to rear: " + value);
+        }
+        System.out.println("First element: " + deque.getPrimeiro());
+        System.out.println("Last element: " + deque.getUltimo());
+        while (!deque.isEmpty()) {
+            System.out.println("Removed from front: " + deque.getPrimeiro());
+            deque.remPrimeiro();
+        }
+    }
+    
 }
